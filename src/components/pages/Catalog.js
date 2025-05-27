@@ -40,6 +40,7 @@ const CatalogCard = styled(Card)`
   }
 `;
 
+// eslint-disable-next-line no-unused-vars
 const PDFPreview = styled.div`
   background-color: var(--gray-bg);
   padding: 2rem;
