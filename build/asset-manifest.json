@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a61817e7.css",
+    "main.js": "/static/js/main.a5f75781.js",
+    "static/js/453.a426d37b.chunk.js": "/static/js/453.a426d37b.chunk.js",
+    "static/media/robotic-automation-case-study.mp4": "/static/media/robotic-automation-case-study.6a074e968017be8dcdd2.mp4",
+    "static/media/EOAT_Frame_Components.pdf": "/static/media/EOAT_Frame_Components.1a6711d5eb57bc7d4147.pdf",
+    "static/media/Pneumatic_Tools.pdf": "/static/media/Pneumatic_Tools.58ff60be15063038c010.pdf",
+    "static/media/Quick_Couplings.pdf": "/static/media/Quick_Couplings.e67fdc6cec82c991b211.pdf",
+    "static/media/Pneumatic_Finger_Grippers.pdf": "/static/media/Pneumatic_Finger_Grippers.d0a66a1f5c05a8ee6e1b.pdf",
+    "static/media/Pneumatic tools- gun.jpg": "/static/media/Pneumatic tools- gun.09b1bc4d4ba7396c1221.jpg",
+    "static/media/Pneumatic Tools.jpg": "/static/media/Pneumatic Tools.8c92c5f69db18770e388.jpg",
+    "static/media/slide3.jpg": "/static/media/slide3.8c92c5f69db18770e388.jpg",
+    "static/media/EOAT-Sprue-Gripper-GR05-Series_CRG.jpg": "/static/media/EOAT-Sprue-Gripper-GR05-Series_CRG.c6dd498faba010470fb5.jpg",
+    "static/media/slide1.jpg": "/static/media/slide1.c6dd498faba010470fb5.jpg",
+    "static/media/Expansion-Gripper_CRG.jpg": "/static/media/Expansion-Gripper_CRG.827e392a5644c09a760b.jpg",
+    "static/media/Frame-connectors-with-SS-profile_CRG.jpg": "/static/media/Frame-connectors-with-SS-profile_CRG.b2575cab607c94e3dbec.jpg",
+    "static/media/Soft Gripper.jpg": "/static/media/Soft Gripper.fb8a15d56dfb739d21bd.jpg",
+    "static/media/en-LA151-quick-connector-for-Electric-Vehicle-leak-testing.jpg": "/static/media/en-LA151-quick-connector-for-Electric-Vehicle-leak-testing.85811f6017f8e94deef6.jpg",
+    "static/media/GOF20-20-Finger-Gripper_CRG.jpg": "/static/media/GOF20-20-Finger-Gripper_CRG.cf10de119edad13a8fa4.jpg",
+    "static/media/Vertical-Fastening-of-Profiles-7.Y00228_CRG.jpg": "/static/media/Vertical-Fastening-of-Profiles-7.Y00228_CRG.0479e1549af65d872015.jpg",
+    "static/media/Adjustable-Angle-Connector-7.Y00343_CRG.jpg": "/static/media/Adjustable-Angle-Connector-7.Y00343_CRG.4f66bf66d836ec006f35.jpg",
+    "static/media/tec-automation-logo.jpg": "/static/media/tec-automation-logo.887f02efd781ced4be41.jpg",
+    "static/media/Cross-Connector-7.Y00690_CRG.jpg": "/static/media/Cross-Connector-7.Y00690_CRG.b842226fdb65cb03a4b2.jpg",
+    "static/media/en-CG4-non-spill-flat-face-quick-coupling.jpg": "/static/media/en-CG4-non-spill-flat-face-quick-coupling.efcd763ade9154b3d03c.jpg",
+    "static/media/slide2.jpg": "/static/media/slide2.efcd763ade9154b3d03c.jpg",
+    "index.html": "/index.html",
+    "main.a61817e7.css.map": "/static/css/main.a61817e7.css.map",
+    "main.a5f75781.js.map": "/static/js/main.a5f75781.js.map",
+    "453.a426d37b.chunk.js.map": "/static/js/453.a426d37b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a61817e7.css",
+    "static/js/main.a5f75781.js"
+  ]
+}
