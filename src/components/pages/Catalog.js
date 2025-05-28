@@ -9,12 +9,12 @@ import { Link } from 'react-router-dom';
 import hydraulicCoupling1 from '../../assets/images/products/couplings/en-CG4-non-spill-flat-face-quick-coupling.jpg';
 import roboticGripper1 from '../../assets/images/products/grippers/EOAT-Sprue-Gripper-GR05-Series_CRG.jpg';
 import eoatComponent1 from '../../assets/images/products/eoat/Frame-connectors-with-SS-profile_CRG.jpg';
-import pneumaticTool1 from '../../assets/images/products/pneumatic/Pneumatic tools- gun.jpg';
+import pneumaticTool1 from '../../assets/images/products/power-tools/Pneumatic tools- gun.jpg';
 
 // Import catalog PDFs
 import eoatCatalogPdf from '../../assets/pdf/eoat/EOAT_Frame_Components.pdf';
 import grippersCatalogPdf from '../../assets/pdf/grippers/Pneumatic_Finger_Grippers.pdf';
-import pneumaticCatalogPdf from '../../assets/pdf/pneumatic/Pneumatic_Tools.pdf';
+import pneumaticCatalogPdf from '../../assets/pdf/power-tools/Power_Tools.pdf';
 import couplingsCatalogPdf from '../../assets/pdf/couplings/Quick_Couplings.pdf';
 
 const PageHeader = styled.section`
@@ -145,11 +145,11 @@ const Catalog = () => {
       ]
     },
     grippers: {
-      title: 'Pneumatic Finger Grippers',
+      title: 'Power Finger Grippers',
       image: roboticGripper1,
       pdf: grippersCatalogPdf,
       fileSize: '2.5 MB',
-      description: 'The pneumatic finger gripper catalog showcases our versatile range of gripping solutions for part handling, assembly, and material transfer applications.',
+      description: 'The power finger gripper catalog showcases our versatile range of gripping solutions for part handling, assembly, and material transfer applications.',
       features: [
         'Parallel and angular gripper configurations',
         'Gripping forces from 50N to 1500N',
@@ -159,13 +159,13 @@ const Catalog = () => {
       ]
     },
     pneumatic: {
-      title: 'Pneumatic Tools & Components',
+      title: 'Power Tools & Components',
       image: pneumaticTool1,
       pdf: pneumaticCatalogPdf,
       fileSize: '7.0 MB',
-      description: 'Our pneumatic tools catalog features high-quality pneumatic tools, cylinders, valves, and air preparation equipment for industrial automation applications.',
+      description: 'Our power tools catalog features high-quality power tools, cylinders, valves, and air preparation equipment for industrial automation applications.',
       features: [
-        'Precision pneumatic tools for assembly operations',
+        'Precision power tools for assembly operations',
         'ISO standard cylinders with various mounting options',
         'Fast-response directional control valves',
         'Complete FRL (filter, regulator, lubricator) units',
@@ -255,7 +255,7 @@ const Catalog = () => {
                 >
                   <Tab eventKey="eoat" title={<><FaTools className="me-2" />EOAT Components</>} />
                   <Tab eventKey="grippers" title={<><FaHandPaper className="me-2" />Grippers</>} />
-                  <Tab eventKey="pneumatic" title={<><FaWind className="me-2" />Pneumatic</>} />
+                  <Tab eventKey="pneumatic" title={<><FaWind className="me-2" />Power Tools</>} />
                   <Tab eventKey="couplings" title={<><FaTint className="me-2" />Couplings</>} />
                 </StyledTabs>
 
@@ -316,8 +316,8 @@ const Catalog = () => {
               },
               {
                 id: 'pneumatic-category',
-                title: 'Pneumatic Systems',
-                description: 'Complete range of pneumatic cylinders, valves, and air preparation units for various automation applications.'
+                title: 'Power Tools',
+                description: 'Industrial power tools for manufacturing, construction, assembly, and maintenance industries with high-performance capabilities.'
               },
               {
                 id: 'grippers-category',

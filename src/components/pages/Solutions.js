@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -11,18 +11,17 @@ import {
   FaCogs,
   FaTools,
   FaArrowRight,
-  FaPlay,
   FaIndustry
 } from 'react-icons/fa';
 
 // Import solution images and videos
 import eoatToolingImg from '../../assets/images/products/grippers/EOAT-Sprue-Gripper-GR05-Series_CRG.jpg';
 import fluidCouplingImg from '../../assets/images/products/couplings/en-CG4-non-spill-flat-face-quick-coupling.jpg';
-import pneumaticComponentsImg from '../../assets/images/products/pneumatic/Pneumatic Tools.jpg';
+import powerToolsImg from '../../assets/images/products/power-tools/Pneumatic Tools.jpg';
 import roboticsIntegrationImg from '../../assets/images/products/grippers/Soft Gripper.jpg';
 import customAutomationImg from '../../assets/images/products/eoat/Frame-connectors-with-SS-profile_CRG.jpg';
 import technicalSupportImg from '../../assets/images/products/eoat/Vertical-Fastening-of-Profiles-7.Y00228_CRG.jpg';
-import roboticCaseStudyVideo from '../../assets/videos/case-studies/robotic-automation-case-study.mp4';
+// Removed local video import - using YouTube video instead
 
 const PageHeader = styled.section`
   background-color: var(--primary-color);
@@ -112,59 +111,7 @@ const cardVariants = {
   }
 };
 
-const VideoContainer = styled.div`
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 
-  video {
-    width: 100%;
-    display: block;
-  }
-`;
-
-const VideoOverlay = styled.button`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  border: none;
-  padding: 0;
-
-  &:hover, &:focus {
-    background: rgba(0, 0, 0, 0.1);
-    outline: none;
-  }
-
-  .play-button {
-    width: 80px;
-    height: 80px;
-    background: rgba(var(--primary-color-rgb), 0.9);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-
-    svg {
-      font-size: 2rem;
-      color: white;
-    }
-  }
-`;
 
 const CaseStudyCard = styled(Card)`
   border: none;
@@ -174,17 +121,6 @@ const CaseStudyCard = styled(Card)`
 `;
 
 const Solutions = () => {
-  const videoRef = useRef(null);
-
-  const handleVideoPlay = () => {
-    if (videoRef.current) {
-      if (videoRef.current.paused) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-    }
-  };
   const solutionsData = [
     {
       id: 1,
@@ -214,15 +150,15 @@ const Solutions = () => {
     },
     {
       id: 3,
-      title: 'Pneumatic Components',
-      description: 'Full range of pneumatic cylinders, valves, air preparation units, and fittings for automation with long service life.',
-      icon: <FaWind />,
+      title: 'Industrial Power Tools',
+      description: 'Industrial Power Tools are tools used in manufacturing, construction, assembly, and maintenance industries for high-performance tasks like drilling, grinding, cutting, fastening, etc. They are typically designed for heavy-duty, long-duration usage, often powered by pneumatic (air) or electric sources.',
+      icon: <FaTools />,
       features: [
-        'ISO standard cylinders in various configurations',
-        'Fast response directional control valves',
-        'Complete FRL (filter, regulator, lubricator) units',
-        'Push-to-connect fittings for quick installation',
-        'Modular mounting systems'
+        'Heavy-duty power and electric power tools',
+        'High-performance drilling, grinding, and cutting equipment',
+        'Professional fastening and assembly tools',
+        'Long-duration usage for industrial applications',
+        'Maintenance tools for manufacturing environments'
       ]
     },
     {
@@ -314,7 +250,7 @@ const Solutions = () => {
                       src={
                         solution.id === 1 ? eoatToolingImg :
                         solution.id === 2 ? fluidCouplingImg :
-                        solution.id === 3 ? pneumaticComponentsImg :
+                        solution.id === 3 ? powerToolsImg :
                         solution.id === 4 ? roboticsIntegrationImg :
                         solution.id === 5 ? customAutomationImg :
                         technicalSupportImg
@@ -454,35 +390,14 @@ const Solutions = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <VideoContainer>
-                  <video
-                    ref={videoRef}
-                    src={roboticCaseStudyVideo}
-                    playsInline
-                    aria-label="Robotic Automation Case Study Video"
-                  >
-                    <track
-                      kind="captions"
-                      label="English captions"
-                      srcLang="en"
-                      default
-                    />
-                  </video>
-                  <VideoOverlay
-                    onClick={handleVideoPlay}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter' || e.key === ' ') {
-                        handleVideoPlay();
-                      }
-                    }}
-                    tabIndex={0}
-                    aria-label="Play video"
-                  >
-                    <div className="play-button">
-                      <FaPlay />
-                    </div>
-                  </VideoOverlay>
-                </VideoContainer>
+                <div className="ratio ratio-16x9 rounded overflow-hidden shadow">
+                  <iframe
+                    src="https://www.youtube.com/embed/pJqxChN325c"
+                    title="TEC Automation Case Study"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen>
+                  </iframe>
+                </div>
               </motion.div>
             </Col>
 
