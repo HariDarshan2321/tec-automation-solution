@@ -139,9 +139,11 @@ const Footer = () => {
               </SocialIcons>
 
               <div className="mt-4">
-                <p><strong>Address:</strong> Lotus Tower, No.85, Mount Road, Guindy, Chennai-32, India</p>
+                <p><strong>India Office:</strong> Lotus Tower, No.85, Mount Road, Guindy, Chennai-32, India</p>
+                <p><strong>India Phone:</strong> +91 8056643564</p>
+                <p><strong>Berlin Office:</strong> Berlin, Germany</p>
+                <p><strong>Berlin Phone:</strong> +49 177 265 8593, +49 157 512 52393</p>
                 <p><strong>Email:</strong> tn.sales@outlook.com</p>
-                <p><strong>Phone:</strong>+91 8056643564 </p>
               </div>
             </FooterSection>
           </Col>

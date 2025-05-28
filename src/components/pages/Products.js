@@ -22,9 +22,9 @@ import eoatComponent2 from '../../assets/images/products/eoat/Vertical-Fastening
 import eoatComponent3 from '../../assets/images/products/eoat/Cross-Connector-7.Y00690_CRG.jpg';
 import eoatComponent4 from '../../assets/images/products/eoat/Adjustable-Angle-Connector-7.Y00343_CRG.jpg';
 
-// Pneumatic tools
-import pneumaticTool1 from '../../assets/images/products/pneumatic/Pneumatic tools- gun.jpg';
-import pneumaticTool2 from '../../assets/images/products/pneumatic/Pneumatic Tools.jpg';
+// Power tools
+import pneumaticTool1 from '../../assets/images/products/power-tools/Pneumatic tools- gun.jpg';
+import pneumaticTool2 from '../../assets/images/products/power-tools/Pneumatic Tools.jpg';
 
 const PageHeader = styled.section`
   background-color: var(--primary-color);
@@ -117,7 +117,7 @@ const Products = () => {
 
   const productCategories = [
     { id: 'hydraulic', name: 'Hydraulic Couplings' },
-    { id: 'pneumatic', name: 'Pneumatic Components' },
+    { id: 'pneumatic', name: 'Power Tools' },
     { id: 'grippers', name: 'Robotic Grippers' },
     { id: 'eoat', name: 'EOAT Solutions' }
   ];

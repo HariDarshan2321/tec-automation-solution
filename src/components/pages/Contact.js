@@ -307,10 +307,21 @@ const Contact = () => {
                         <FaMapMarkerAlt />
                       </InfoIcon>
                       <div>
-                        <h5>Address</h5>
+                        <h5>India Office</h5>
                         <p>TEC Automation Solutions<br />
                         Lotus Tower, No.85, Mount Road, Guindy, Chennai-32 <br />
                         India</p>
+                      </div>
+                    </InfoItem>
+
+                    <InfoItem>
+                      <InfoIcon>
+                        <FaMapMarkerAlt />
+                      </InfoIcon>
+                      <div>
+                        <h5>Berlin Office</h5>
+                        <p>TEC Automation Solutions<br />
+                        Berlin, Germany</p>
                       </div>
                     </InfoItem>
 
@@ -320,7 +331,8 @@ const Contact = () => {
                       </InfoIcon>
                       <div>
                         <h5>Phone</h5>
-                        <p>+91 8056643564</p>
+                        <p>India: +91 8056643564<br />
+                        Berlin: +49 177 265 8593, +49 157 512 52393</p>
                       </div>
                     </InfoItem>
 

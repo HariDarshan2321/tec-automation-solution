@@ -11,6 +11,14 @@ import slide2 from '../../assets/images/slideshow/slide2.jpg';
 import slide3 from '../../assets/images/slideshow/slide3.jpg';
 import heroBackground from '../../assets/logos/tec-automation-logo.jpg';
 
+// Import industrial automation images
+import industrialAuto1 from '../../assets/images/industrial-automation/robot-arm-eoat-1.jpg';
+import industrialAuto2 from '../../assets/images/industrial-automation/robotic-tooling-system.jpg';
+import industrialAuto3 from '../../assets/images/industrial-automation/complex-eoat-system.jpg';
+
+// Import video
+import roboticVideo from '../../assets/videos/robotic-eoat-automotive-bumper.mp4';
+
 const slideImages = [slide1, slide2, slide3];
 
 const Slideshow = styled.div`
@@ -157,8 +165,16 @@ const Home = () => {
                 transition={{ duration: 0.6 }}
               >
                 <h2 className="mb-4">About TEC AUTOMATION</h2>
-                <p>TEC Automation Solutions is a Chennai-based industrial automation company offering advanced, reliable, and cost-effective solutions for the Indian manufacturing sector. As an authorized partner of CRG Robotics, China, we provide a wide range of globally trusted automation products backed by strong local support and technical expertise.</p>
-                <p>At TEC Automation, we partner with global leaders in fluid coupling technology, including Foshan, CNW, Langan, Runxi, and Galaxy. Our core strength lies in our experienced team, which brings over 10 years of hands-on experience in the Indian automation market.</p>
+                <p>TEC Automation Solutions is your one-stop destination for all automation needs, delivering innovative solutions that meet global standards. Headquartered in Chennai, we specialize in providing comprehensive, reliable, and cost-effective automation solutions tailored to the evolving needs of the Indian manufacturing sector.</p>
+                <p>Our core verticals include:</p>
+                <ul className="mb-3">
+                  <li>Industrial Automation Solutions</li>
+                  <li>EOAT (End-of-Arm Tooling) Components & Systems</li>
+                  <li>Fluid Line Quick Coupling</li>
+                  <li>Industrial Power Tools</li>
+                </ul>
+                <p>We are proud to partner with globally recognized manufacturers such as CRG Robotics, Foshan, CNW, Langan, Runxi, Galaxy, and others. Backed by a team with over a decade of hands-on experience in the Indian automation market, we ensure seamless integration, strong local support, and technical excellence.</p>
+                <p>To strengthen our global presence, TEC Automation Solutions has also established a branch office in Berlin, Germany, enabling us to expand our market reach and serve customers at an international level.</p>
                 <Button as={Link} to="/about" variant="outline-primary" className="mt-3">Learn More</Button>
               </motion.div>
             </Col>
@@ -222,8 +238,8 @@ const Home = () => {
                   <SolutionIcon>
                     <FaWind />
                   </SolutionIcon>
-                  <h3>Pneumatic Components</h3>
-                  <p>Full range of pneumatic cylinders, valves, air preparation units, and fittings for automation with fast response time and long cycle life.</p>
+                  <h3>Industrial Power Tools</h3>
+                  <p>Industrial Power Tools are tools used in manufacturing, construction, assembly, and maintenance industries for high-performance tasks like drilling, grinding, cutting, fastening, etc. They are typically designed for heavy-duty, long-duration usage, often powered by pneumatic (air) or electric sources.</p>
                 </SolutionCard>
               </Col>
 
@@ -261,6 +277,129 @@ const Home = () => {
 
           <div className="text-center mt-5">
             <Button as={Link} to="/solutions" variant="primary" size="lg">View All Solutions</Button>
+          </div>
+        </Container>
+      </SectionContainer>
+
+      {/* Industrial Automation Solutions Section */}
+      <SectionContainer>
+        <Container>
+          <motion.div
+            className="text-center mb-5"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2>Industrial Automation Solutions</h2>
+            <p className="lead">Advanced robotic systems and EOAT solutions</p>
+          </motion.div>
+
+          <Row className="g-4">
+            <Col md={4}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4 }}
+                className="text-center"
+              >
+                <div className="rounded overflow-hidden shadow-sm mb-3">
+                  <img
+                    src={industrialAuto1}
+                    alt="Robot Arm with EOAT"
+                    className="img-fluid w-100"
+                    style={{height: '300px', objectFit: 'cover'}}
+                  />
+                </div>
+                <h5>Robot Arm with EOAT</h5>
+                <p className="text-muted">Advanced robotic arm equipped with End-of-Arm Tooling for precision handling</p>
+              </motion.div>
+            </Col>
+            <Col md={4}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+                className="text-center"
+              >
+                <div className="rounded overflow-hidden shadow-sm mb-3">
+                  <img
+                    src={industrialAuto2}
+                    alt="Robotic Tooling System"
+                    className="img-fluid w-100"
+                    style={{height: '300px', objectFit: 'cover'}}
+                  />
+                </div>
+                <h5>Robotic Tooling System</h5>
+                <p className="text-muted">Sophisticated tooling system with multiple connection points and fixtures</p>
+              </motion.div>
+            </Col>
+            <Col md={4}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.2 }}
+                className="text-center"
+              >
+                <div className="rounded overflow-hidden shadow-sm mb-3">
+                  <img
+                    src={industrialAuto3}
+                    alt="Complex EOAT System"
+                    className="img-fluid w-100"
+                    style={{height: '300px', objectFit: 'cover'}}
+                  />
+                </div>
+                <h5>Complex EOAT System</h5>
+                <p className="text-muted">Multi-functional EOAT system for complex manufacturing operations</p>
+              </motion.div>
+            </Col>
+          </Row>
+        </Container>
+      </SectionContainer>
+
+      {/* Video Section */}
+      <SectionContainer bgColor="var(--light-bg)">
+        <Container>
+          <motion.div
+            className="text-center mb-5"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2>See Our Solutions in Action</h2>
+            <p className="lead">Watch how our industrial power tools improve manufacturing efficiency</p>
+          </motion.div>
+
+          <Row className="justify-content-center">
+            <Col lg={8}>
+              <div className="rounded overflow-hidden shadow">
+                <video
+                  className="w-100"
+                  controls
+                  preload="metadata"
+                  style={{height: 'auto'}}
+                >
+                  <source src={roboticVideo} type="video/mp4" />
+                  <track
+                    kind="captions"
+                    label="English captions"
+                    srcLang="en"
+                    default
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </Col>
+          </Row>
+
+          <div className="text-center mt-4">
+            <Button as={Link} to="/contact" variant="primary" size="lg">
+              Get in Touch
+            </Button>
           </div>
         </Container>
       </SectionContainer>
