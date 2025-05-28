@@ -143,7 +143,7 @@ const Footer = () => {
                 <p><strong>India Phone:</strong> +91 8056643564</p>
                 <p><strong>Berlin Office:</strong> Berlin, Germany</p>
                 <p><strong>Berlin Phone:</strong> +49 177 265 8593, +49 157 512 52393</p>
-                <p><strong>Email:</strong> tn.sales@tec-automation.com</p>
+                <p><strong>Email:</strong> tn.sales@outlook.com</p>
               </div>
             </FooterSection>
           </Col>
