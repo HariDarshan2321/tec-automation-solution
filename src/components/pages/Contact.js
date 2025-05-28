@@ -342,7 +342,7 @@ const Contact = () => {
                       </InfoIcon>
                       <div>
                         <h5>Email</h5>
-                        <p>tn.sales@tec-automation.com</p>
+                        <p>tn.sales@outlook.com</p>
                       </div>
                     </InfoItem>
 
