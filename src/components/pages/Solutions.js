@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -6,7 +5,6 @@ import styled from 'styled-components';
 import {
   FaHandPaper,
   FaTint,
-  FaWind,
   FaRobot,
   FaCogs,
   FaTools,
