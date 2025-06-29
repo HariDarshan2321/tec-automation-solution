@@ -16,8 +16,17 @@ import industrialAuto1 from '../../assets/images/industrial-automation/robot-arm
 import industrialAuto2 from '../../assets/images/industrial-automation/robotic-tooling-system.jpg';
 import industrialAuto3 from '../../assets/images/industrial-automation/complex-eoat-system.jpg';
 
-// Import video
+// Import videos
 import roboticVideo from '../../assets/videos/robotic-eoat-automotive-bumper.mp4';
+import dryDisconnectVideo from '../../assets/videos/dry-disconnect-coupling.mp4';
+
+// Import coupling images
+import hydraulicCoupling from '../../assets/images/products/couplings/hydraulic-flat-face-coupling.webp';
+import pneumaticCoupling from '../../assets/images/products/couplings/pneumatic-quick-connectors.webp';
+import dryDisconnectCouplingImg from '../../assets/images/products/couplings/dry-disconnect-coupling.webp';
+import highFlowCoupling from '../../assets/images/products/couplings/high-flow-coupling.jpg';
+import breakawayValve from '../../assets/images/products/couplings/breakaway-valve.jpg';
+import moldCoupling from '../../assets/images/products/couplings/mold-coupling.jpg';
 
 const slideImages = [slide1, slide2, slide3];
 
@@ -173,7 +182,7 @@ const Home = () => {
                   <li>Fluid Line Quick Coupling</li>
                   <li>Industrial Power Tools</li>
                 </ul>
-                <p>We are proud to partner with globally recognized manufacturers such as CRG Robotics, Foshan, CNW, Langan, Runxi, Galaxy, and others. Backed by a team with over a decade of hands-on experience in the Indian automation market, we ensure seamless integration, strong local support, and technical excellence.</p>
+                <p>We are proud to partner with globally recognized manufacturers and suppliers. Backed by a team with over a decade of hands-on experience in the Indian automation market, we ensure seamless integration, strong local support, and technical excellence.</p>
                 <p>To strengthen our global presence, TEC Automation Solutions has also established a branch office in Berlin, Germany, enabling us to expand our market reach and serve customers at an international level.</p>
                 <Button as={Link} to="/about" variant="outline-primary" className="mt-3">Learn More</Button>
               </motion.div>
@@ -228,8 +237,8 @@ const Home = () => {
                   <SolutionIcon>
                     <FaTint />
                   </SolutionIcon>
-                  <h3>Fluid Quick Couplings</h3>
-                  <p>High-performance multi-fluid quick couplers for pneumatic, hydraulic, and thermal management systems ideal for rapid, leak-free connections in demanding applications.</p>
+                  <h3>Quick Coupling Systems</h3>
+                  <p>Comprehensive range of hydraulic, pneumatic, and dry disconnect couplings for industrial applications. From high-pressure hydraulic systems to safe chemical transfer, our coupling solutions ensure reliable, leak-free connections with minimal downtime.</p>
                 </SolutionCard>
               </Col>
 
@@ -360,7 +369,7 @@ const Home = () => {
         </Container>
       </SectionContainer>
 
-      {/* Video Section */}
+      {/* Quick Coupling Solutions Section */}
       <SectionContainer bgColor="var(--light-bg)">
         <Container>
           <motion.div
@@ -370,8 +379,275 @@ const Home = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
+            <h2>Quick Coupling Solutions</h2>
+            <p className="lead">Advanced fluid connection systems for industrial applications</p>
+          </motion.div>
+
+          <div className="mb-5"></div>
+
+          <Row className="align-items-center mb-5">
+            <Col lg={7} className="mb-4 mb-lg-0">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <h3>Dry Disconnect Coupling Technology</h3>
+                <p>Our dry disconnect couplings provide safe, efficient fluid transfer with minimal spillage and contamination. Ideal for chemical processing, fuel handling, and hazardous material transfer applications.</p>
+
+                <Row className="g-3 mb-4">
+                  <Col sm={6}>
+                    <div className="d-flex align-items-center">
+                      <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '40px', height: '40px', fontSize: '1.2rem'}}>
+                        ✓
+                      </div>
+                      <span>Zero-spill disconnection</span>
+                    </div>
+                  </Col>
+                  <Col sm={6}>
+                    <div className="d-flex align-items-center">
+                      <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '40px', height: '40px', fontSize: '1.2rem'}}>
+                        ✓
+                      </div>
+                      <span>High-pressure capability</span>
+                    </div>
+                  </Col>
+                  <Col sm={6}>
+                    <div className="d-flex align-items-center">
+                      <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '40px', height: '40px', fontSize: '1.2rem'}}>
+                        ✓
+                      </div>
+                      <span>Corrosion resistant</span>
+                    </div>
+                  </Col>
+                  <Col sm={6}>
+                    <div className="d-flex align-items-center">
+                      <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '40px', height: '40px', fontSize: '1.2rem'}}>
+                        ✓
+                      </div>
+                      <span>Easy maintenance</span>
+                    </div>
+                  </Col>
+                </Row>
+
+                <Button as={Link} to="/products" variant="outline-primary">
+                  Explore Coupling Products
+                </Button>
+              </motion.div>
+            </Col>
+            <Col lg={5}>
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="rounded overflow-hidden shadow" style={{maxWidth: '800px', margin: '0 auto'}}>
+                  <video
+                    className="w-100"
+                    controls
+                    preload="metadata"
+                    style={{height: 'auto', maxHeight: '300px'}}
+                  >
+                    <source src={dryDisconnectVideo} type="video/mp4" />
+                    <track
+                      kind="captions"
+                      label="English captions"
+                      srcLang="en"
+                      default
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </motion.div>
+            </Col>
+          </Row>
+
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <Row className="g-4">
+              <Col md={4}>
+                <motion.div
+                  variants={cardVariants}
+                  className="text-center p-4 bg-white rounded shadow-sm h-100"
+                >
+                  <div className="mb-3">
+                    <img
+                      src={hydraulicCoupling}
+                      alt="Hydraulic Coupling"
+                      className="img-fluid rounded"
+                      style={{height: '150px', width: '100%', objectFit: 'cover'}}
+                    />
+                  </div>
+                  <h5>Hydraulic Couplings</h5>
+                  <p className="text-muted">High-pressure hydraulic quick couplings for industrial machinery, construction equipment, and mobile applications. ISO 7241-A/B compliant.</p>
+                </motion.div>
+              </Col>
+              <Col md={4}>
+                <motion.div
+                  variants={cardVariants}
+                  className="text-center p-4 bg-white rounded shadow-sm h-100"
+                >
+                  <div className="mb-3">
+                    <img
+                      src={pneumaticCoupling}
+                      alt="Pneumatic Coupling"
+                      className="img-fluid rounded"
+                      style={{height: '150px', width: '100%', objectFit: 'cover'}}
+                    />
+                  </div>
+                  <h5>Pneumatic Couplings</h5>
+                  <p className="text-muted">Compressed air quick couplings for pneumatic tools, automation systems, and air distribution networks. ISO 6150B standard.</p>
+                </motion.div>
+              </Col>
+              <Col md={4}>
+                <motion.div
+                  variants={cardVariants}
+                  className="text-center p-4 bg-white rounded shadow-sm h-100"
+                >
+                  <div className="mb-3">
+                    <img
+                      src={breakawayValve}
+                      alt="Specialized Coupling"
+                      className="img-fluid rounded"
+                      style={{height: '150px', width: '100%', objectFit: 'cover'}}
+                    />
+                  </div>
+                  <h5>Specialized Couplings</h5>
+                  <p className="text-muted">Test connectors for EV applications, breakaway safety valves, and mold cooling systems for specialized industrial requirements.</p>
+                </motion.div>
+              </Col>
+            </Row>
+          </motion.div>
+
+          {/* Additional Coupling Products Showcase */}
+          <motion.div
+            className="text-center mt-5 mb-4"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h3>Featured Coupling Products</h3>
+            <p className="text-muted">Explore our comprehensive range of industrial coupling solutions</p>
+          </motion.div>
+
+          <Row className="g-4 mb-5">
+            <Col lg={3} md={6}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4 }}
+                className="text-center"
+              >
+                <div className="bg-white p-3 rounded shadow-sm h-100">
+                  <div className="rounded overflow-hidden mb-3">
+                    <img
+                      src={dryDisconnectCouplingImg}
+                      alt="Dry Disconnect Coupling"
+                      className="img-fluid w-100"
+                      style={{height: '180px', objectFit: 'cover'}}
+                    />
+                  </div>
+                  <h6>Dry Disconnect Couplings</h6>
+                  <p className="text-muted small">Stainless steel construction for chemical and fuel applications</p>
+                </div>
+              </motion.div>
+            </Col>
+            <Col lg={3} md={6}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+                className="text-center"
+              >
+                <div className="bg-white p-3 rounded shadow-sm h-100">
+                  <div className="rounded overflow-hidden mb-3">
+                    <img
+                      src={highFlowCoupling}
+                      alt="High Flow Coupling"
+                      className="img-fluid w-100"
+                      style={{height: '180px', objectFit: 'cover'}}
+                    />
+                  </div>
+                  <h6>High Flow Couplings</h6>
+                  <p className="text-muted small">Non-drip flat face design for maximum flow rates</p>
+                </div>
+              </motion.div>
+            </Col>
+            <Col lg={3} md={6}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.2 }}
+                className="text-center"
+              >
+                <div className="bg-white p-3 rounded shadow-sm h-100">
+                  <div className="rounded overflow-hidden mb-3">
+                    <img
+                      src={moldCoupling}
+                      alt="Mold Coupling"
+                      className="img-fluid w-100"
+                      style={{height: '180px', objectFit: 'cover'}}
+                    />
+                  </div>
+                  <h6>Mold Cooling Couplings</h6>
+                  <p className="text-muted small">Precision cooling system connections for injection molding</p>
+                </div>
+              </motion.div>
+            </Col>
+            <Col lg={3} md={6}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 0.3 }}
+                className="text-center"
+              >
+                <div className="bg-white p-3 rounded shadow-sm h-100">
+                  <div className="rounded overflow-hidden mb-3">
+                    <img
+                      src={breakawayValve}
+                      alt="Breakaway Valve"
+                      className="img-fluid w-100"
+                      style={{height: '180px', objectFit: 'cover'}}
+                    />
+                  </div>
+                  <h6>Safety Breakaway Valves</h6>
+                  <p className="text-muted small">Emergency disconnect systems for fuel dispensing</p>
+                </div>
+              </motion.div>
+            </Col>
+          </Row>
+
+          <div className="text-center">
+            <Button as={Link} to="/products" variant="primary" size="lg">
+              View Complete Coupling Catalog
+            </Button>
+          </div>
+        </Container>
+      </SectionContainer>
+
+      {/* Video Section */}
+      <SectionContainer>
+        <Container>
+          <motion.div
+            className="text-center mb-5"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             <h2>See Our Solutions in Action</h2>
-            <p className="lead">Watch how our industrial power tools improve manufacturing efficiency</p>
+            <p className="lead">Watch how our industrial automation solutions improve manufacturing efficiency</p>
           </motion.div>
 
           <Row className="justify-content-center">
