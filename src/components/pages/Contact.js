@@ -100,7 +100,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     // In a production environment, you would replace this with actual form submission
-    // to a backend API or email service that sends the data to tn.sales@tec-automation.com
+    // to a backend API or email service that sends the data to sachin@tecautomations.in
     // For example using EmailJS, FormSpree, or your own backend API
 
     // Example using a hypothetical API endpoint:
@@ -111,7 +111,7 @@ const Contact = () => {
     //   },
     //   body: JSON.stringify({
     //     ...formData,
-    //     recipientEmail: 'tn.sales@tec-automation.com'
+    //     recipientEmail: 'sachin@tecautomations.in'
     //   }),
     // })
     // .then(response => response.json())
@@ -130,7 +130,7 @@ const Contact = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       setShowAlert(true);
-      console.log("Form would be sent to: tn.sales@tec-automation.com");
+      console.log("Form would be sent to: sachin@tecautomations.in");
       console.log("Form data:", formData);
 
       // Reset form
@@ -342,7 +342,7 @@ const Contact = () => {
                       </InfoIcon>
                       <div>
                         <h5>Email</h5>
-                        <p>tn.sales@outlook.com</p>
+                        <p>sachin@tecautomations.in</p>
                       </div>
                     </InfoItem>
 
