@@ -28,6 +28,10 @@ import highFlowCoupling from '../../assets/images/products/couplings/high-flow-c
 import breakawayValve from '../../assets/images/products/couplings/breakaway-valve.jpg';
 import moldCoupling from '../../assets/images/products/couplings/mold-coupling.jpg';
 
+// Import customer logos - replace these with actual logo files when available
+import itwLogo from '../../assets/images/customers/itw-automotive-logo.jpg'; // Placeholder - replace with itw-automotive-logo.png
+import montraLogo from '../../assets/images/customers/montra-electric-tivolt-logo.jpg'; // Placeholder - replace with montra-electric-tivolt-logo.png
+
 const slideImages = [slide1, slide2, slide3];
 
 const Slideshow = styled.div`
@@ -677,6 +681,65 @@ const Home = () => {
               Get in Touch
             </Button>
           </div>
+        </Container>
+      </SectionContainer>
+
+      {/* Customers Section */}
+      <SectionContainer bgColor="var(--light-bg)">
+        <Container>
+          <motion.div
+            className="text-center mb-5"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2>Our Trusted Customers</h2>
+            <p className="lead">Leading companies trust TEC Automation for their industrial automation needs</p>
+          </motion.div>
+
+          <Row className="justify-content-center align-items-center g-5">
+            <Col lg={4} md={6}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="text-center"
+              >
+                <div className="bg-white p-4 rounded shadow-sm" style={{minHeight: '200px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                  <img
+                    src={itwLogo}
+                    alt="ITW Automotive"
+                    className="img-fluid"
+                    style={{maxHeight: '120px', maxWidth: '250px', objectFit: 'contain'}}
+                  />
+                </div>
+                <h5 className="mt-3">ITW Automotive</h5>
+                <p className="text-muted">Global leader in engineered components and fasteners</p>
+              </motion.div>
+            </Col>
+            <Col lg={4} md={6}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="text-center"
+              >
+                <div className="bg-white p-4 rounded shadow-sm" style={{minHeight: '200px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                  <img
+                    src={montraLogo}
+                    alt="Montra Electric TIVOLT"
+                    className="img-fluid"
+                    style={{maxHeight: '120px', maxWidth: '250px', objectFit: 'contain'}}
+                  />
+                </div>
+                <h5 className="mt-3">Montra Electric TIVOLT</h5>
+                <p className="text-muted">Leading electric vehicle manufacturer in India</p>
+              </motion.div>
+            </Col>
+          </Row>
         </Container>
       </SectionContainer>
 
