@@ -736,7 +736,7 @@ const Home = () => {
                   />
                 </div>
                 <h5 className="mt-3">Montra Electric TIVOLT</h5>
-                <p className="text-muted">Leading electric vehicle manufacturer in India</p>
+                <p className="text-muted">Leading OEM manufacturer in India</p>
               </motion.div>
             </Col>
           </Row>
