@@ -31,6 +31,7 @@ import moldCoupling from '../../assets/images/products/couplings/mold-coupling.j
 // Import customer logos - replace these with actual logo files when available
 import itwLogo from '../../assets/images/customers/itw-automotive-logo.jpg'; // Placeholder - replace with itw-automotive-logo.png
 import montraLogo from '../../assets/images/customers/montra-electric-tivolt-logo.jpg'; // Placeholder - replace with montra-electric-tivolt-logo.png
+import daimlerLogo from '../../assets/images/customers/daimler.png'; // Placeholder - replace with daimler-logo.png
 
 const slideImages = [slide1, slide2, slide3];
 
@@ -737,6 +738,26 @@ const Home = () => {
                 </div>
                 <h5 className="mt-3">Montra Electric TIVOLT</h5>
                 <p className="text-muted">Leading OEM manufacturer in India</p>
+              </motion.div>
+            </Col>
+             <Col lg={4} md={6}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="text-center"
+              >
+                <div className="bg-white p-4 rounded shadow-sm" style={{minHeight: '200px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                  <img
+                    src={daimlerLogo}
+                    alt="DAIMLER"
+                    className="img-fluid"
+                    style={{maxHeight: '120px', maxWidth: '250px', objectFit: 'contain'}}
+                  />
+                </div>
+                <h5 className="mt-3">DAIMLER</h5>
+                <p className="text-muted">Leading Commercial Vehicle manufacture</p>
               </motion.div>
             </Col>
           </Row>
