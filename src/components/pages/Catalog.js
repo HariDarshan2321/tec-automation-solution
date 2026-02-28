@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Button, Card, Tabs, Tab } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import { FaDownload, FaEnvelope, FaTools, FaTint, FaWind, FaHandPaper } from 'react-icons/fa';
+import { FaDownload, FaEnvelope, FaTools, FaTint, FaHandPaper } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 // Import product images
 import hydraulicCoupling1 from '../../assets/images/products/couplings/en-CG4-non-spill-flat-face-quick-coupling.jpg';
 import roboticGripper1 from '../../assets/images/products/grippers/EOAT-Sprue-Gripper-GR05-Series_CRG.jpg';
 import eoatComponent1 from '../../assets/images/products/eoat/Frame-connectors-with-SS-profile_CRG.jpg';
-import pneumaticTool1 from '../../assets/images/products/power-tools/Pneumatic tools- gun.jpg';
+
 
 // Import catalog PDFs
 import eoatCatalogPdf from '../../assets/pdf/eoat/EOAT_Frame_Components.pdf';
 import grippersCatalogPdf from '../../assets/pdf/grippers/Pneumatic_Finger_Grippers.pdf';
-import pneumaticCatalogPdf from '../../assets/pdf/power-tools/Power_Tools.pdf';
+
 import couplingsCatalogPdf from '../../assets/pdf/couplings/Quick_Couplings.pdf';
 
 const PageHeader = styled.section`
@@ -158,20 +158,6 @@ const Catalog = () => {
         'Special jaw options for delicate part handling'
       ]
     },
-    pneumatic: {
-      title: 'Power Tools & Components',
-      image: pneumaticTool1,
-      pdf: pneumaticCatalogPdf,
-      fileSize: '7.0 MB',
-      description: 'Our power tools catalog features high-quality power tools, cylinders, valves, and air preparation equipment for industrial automation applications.',
-      features: [
-        'Precision power tools for assembly operations',
-        'ISO standard cylinders with various mounting options',
-        'Fast-response directional control valves',
-        'Complete FRL (filter, regulator, lubricator) units',
-        'Energy-efficient components for reduced air consumption'
-      ]
-    },
     couplings: {
       title: 'Quick Couplings & Connectors',
       image: hydraulicCoupling1,
@@ -255,7 +241,6 @@ const Catalog = () => {
                 >
                   <Tab eventKey="eoat" title={<><FaTools className="me-2" />EOAT Components</>} />
                   <Tab eventKey="grippers" title={<><FaHandPaper className="me-2" />Grippers</>} />
-                  <Tab eventKey="pneumatic" title={<><FaWind className="me-2" />Power Tools</>} />
                   <Tab eventKey="couplings" title={<><FaTint className="me-2" />Couplings</>} />
                 </StyledTabs>
 
@@ -313,11 +298,6 @@ const Catalog = () => {
                 id: 'hydraulic-category',
                 title: 'Hydraulic Quick Couplings',
                 description: 'High-pressure hydraulic couplings with spill-free operation designed for reliability in demanding environments.'
-              },
-              {
-                id: 'pneumatic-category',
-                title: 'Power Tools',
-                description: 'Industrial power tools for manufacturing, construction, assembly, and maintenance industries with high-performance capabilities.'
               },
               {
                 id: 'grippers-category',

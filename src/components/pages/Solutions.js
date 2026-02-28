@@ -15,7 +15,7 @@ import {
 // Import solution images and videos
 import eoatToolingImg from '../../assets/images/products/grippers/EOAT-Sprue-Gripper-GR05-Series_CRG.jpg';
 import fluidCouplingImg from '../../assets/images/products/couplings/en-CG4-non-spill-flat-face-quick-coupling.jpg';
-import powerToolsImg from '../../assets/images/products/power-tools/Pneumatic Tools.jpg';
+
 import roboticsIntegrationImg from '../../assets/images/products/grippers/Soft Gripper.jpg';
 import customAutomationImg from '../../assets/images/products/eoat/Frame-connectors-with-SS-profile_CRG.jpg';
 import technicalSupportImg from '../../assets/images/products/eoat/Vertical-Fastening-of-Profiles-7.Y00228_CRG.jpg';
@@ -147,19 +147,6 @@ const Solutions = () => {
       ]
     },
     {
-      id: 3,
-      title: 'Industrial Power Tools',
-      description: 'Industrial Power Tools are tools used in manufacturing, construction, assembly, and maintenance industries for high-performance tasks like drilling, grinding, cutting, fastening, etc. They are typically designed for heavy-duty, long-duration usage, often powered by pneumatic (air) or electric sources.',
-      icon: <FaTools />,
-      features: [
-        'Heavy-duty power and electric power tools',
-        'High-performance drilling, grinding, and cutting equipment',
-        'Professional fastening and assembly tools',
-        'Long-duration usage for industrial applications',
-        'Maintenance tools for manufacturing environments'
-      ]
-    },
-    {
       id: 4,
       title: 'Robotics Integration',
       description: 'Enhance precision and efficiency with advanced robotics integration services customized for specific production requirements.',
@@ -248,7 +235,6 @@ const Solutions = () => {
                       src={
                         solution.id === 1 ? eoatToolingImg :
                         solution.id === 2 ? fluidCouplingImg :
-                        solution.id === 3 ? powerToolsImg :
                         solution.id === 4 ? roboticsIntegrationImg :
                         solution.id === 5 ? customAutomationImg :
                         technicalSupportImg

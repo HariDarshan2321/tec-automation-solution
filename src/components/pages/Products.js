@@ -22,9 +22,7 @@ import eoatComponent2 from '../../assets/images/products/eoat/Vertical-Fastening
 import eoatComponent3 from '../../assets/images/products/eoat/Cross-Connector-7.Y00690_CRG.jpg';
 import eoatComponent4 from '../../assets/images/products/eoat/Adjustable-Angle-Connector-7.Y00343_CRG.jpg';
 
-// Power tools
-import pneumaticTool1 from '../../assets/images/products/power-tools/Pneumatic tools- gun.jpg';
-import pneumaticTool2 from '../../assets/images/products/power-tools/Pneumatic Tools.jpg';
+
 
 const PageHeader = styled.section`
   background-color: var(--primary-color);
@@ -117,7 +115,6 @@ const Products = () => {
 
   const productCategories = [
     { id: 'hydraulic', name: 'Hydraulic Couplings' },
-    { id: 'pneumatic', name: 'Power Tools' },
     { id: 'grippers', name: 'Robotic Grippers' },
     { id: 'eoat', name: 'EOAT Solutions' }
   ];
@@ -137,18 +134,6 @@ const Products = () => {
         ]
       },
       {
-        id: 'h2',
-        name: 'HF-200 Multi-Fluid Coupling',
-        description: 'Versatile quick coupling system for multiple hydraulic lines with single-action connection.',
-        specs: [
-          { name: 'Max Pressure', value: '200 bar' },
-          { name: 'Flow Rate', value: '80 L/min' },
-          { name: 'Temperature Range', value: '-20°C to +80°C' },
-          { name: 'Connection Size', value: 'Multiple ports: 3/8" to 1/2"' },
-          { name: 'Material', value: 'Aluminum body with steel components' }
-        ]
-      },
-      {
         id: 'h3',
         name: 'HT-150 Thermal Coupling',
         description: 'Specialized coupling for thermal management systems with enhanced temperature resistance.',
@@ -158,44 +143,6 @@ const Products = () => {
           { name: 'Temperature Range', value: '-40°C to +150°C' },
           { name: 'Connection Size', value: '3/8" to 3/4" NPT/BSP' },
           { name: 'Material', value: 'Stainless steel with special seals' }
-        ]
-      }
-    ],
-    pneumatic: [
-      {
-        id: 'p1',
-        name: 'ISO Pneumatic Cylinder',
-        description: 'Standard-compliant pneumatic cylinders with various mounting options for industrial automation.',
-        specs: [
-          { name: 'Bore Size', value: '32mm to 100mm' },
-          { name: 'Stroke Length', value: '25mm to 500mm' },
-          { name: 'Operating Pressure', value: '1 to 10 bar' },
-          { name: 'Temperature Range', value: '-20°C to +80°C' },
-          { name: 'Material', value: 'Anodized aluminum body with steel piston rod' }
-        ]
-      },
-      {
-        id: 'p2',
-        name: 'Air Preparation Unit',
-        description: 'Complete FRL (filter, regulator, lubricator) unit for compressed air preparation in pneumatic systems.',
-        specs: [
-          { name: 'Port Size', value: '1/4" to 1"' },
-          { name: 'Flow Rate', value: 'Up to 4000 L/min' },
-          { name: 'Pressure Range', value: '0.5 to 10 bar' },
-          { name: 'Filtration', value: '5μm, 40μm options' },
-          { name: 'Mounting', value: 'Wall or bracket mount' }
-        ]
-      },
-      {
-        id: 'p3',
-        name: 'Directional Control Valve',
-        description: 'Fast-response pneumatic valves for precise control of air flow in automation systems.',
-        specs: [
-          { name: 'Valve Type', value: '2/2, 3/2, 5/2, 5/3 configurations' },
-          { name: 'Actuation', value: 'Solenoid, mechanical, pneumatic' },
-          { name: 'Response Time', value: '<20ms' },
-          { name: 'Flow Rate', value: 'Up to 1200 L/min' },
-          { name: 'Voltage Options', value: '24V DC, 110V AC, 220V AC' }
         ]
       }
     ],
@@ -353,15 +300,13 @@ const Products = () => {
                       src={
                         activeCategory === 'hydraulic'
                           ? (index % 2 === 0 ? hydraulicCoupling1 : hydraulicCoupling2)
-                          : activeCategory === 'pneumatic'
-                            ? (index % 2 === 0 ? pneumaticTool1 : pneumaticTool2)
-                            : activeCategory === 'grippers'
-                              ? (index === 0 ? roboticGripper1 :
-                                 index === 1 ? roboticGripper2 :
-                                 index === 2 ? roboticGripper3 : roboticGripper4)
-                              : (index === 0 ? eoatComponent1 :
-                                 index === 1 ? eoatComponent2 :
-                                 index === 2 ? eoatComponent3 : eoatComponent4)
+                          : activeCategory === 'grippers'
+                            ? (index === 0 ? roboticGripper1 :
+                               index === 1 ? roboticGripper2 :
+                               index === 2 ? roboticGripper3 : roboticGripper4)
+                            : (index === 0 ? eoatComponent1 :
+                               index === 1 ? eoatComponent2 :
+                               index === 2 ? eoatComponent3 : eoatComponent4)
                       }
                       alt={product.name}
                     />

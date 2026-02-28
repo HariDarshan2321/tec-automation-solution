@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import { FaHandPaper, FaTint, FaWind, FaRobot, FaCogs, FaTools } from 'react-icons/fa';
+import { FaHandPaper, FaTint, FaRobot, FaCogs, FaTools } from 'react-icons/fa';
 
 // Import slideshow images and company logo
 import slide1 from '../../assets/images/slideshow/slide1.jpg';
@@ -185,7 +185,7 @@ const Home = () => {
                   <li>Industrial Automation Solutions</li>
                   <li>EOAT (End-of-Arm Tooling) Components & Systems</li>
                   <li>Fluid Line Quick Coupling</li>
-                  <li>Industrial Power Tools</li>
+
                 </ul>
                 <p>We are proud to partner with globally recognized manufacturers and suppliers. Backed by a team with over a decade of hands-on experience in the Indian automation market, we ensure seamless integration, strong local support, and technical excellence.</p>
                 <p>To strengthen our global presence, TEC Automation Solutions has also established a branch office in Berlin, Germany, enabling us to expand our market reach and serve customers at an international level.</p>
@@ -244,16 +244,6 @@ const Home = () => {
                   </SolutionIcon>
                   <h3>Quick Coupling Systems</h3>
                   <p>Comprehensive range of hydraulic, pneumatic, and dry disconnect couplings for industrial applications. From high-pressure hydraulic systems to safe chemical transfer, our coupling solutions ensure reliable, leak-free connections with minimal downtime.</p>
-                </SolutionCard>
-              </Col>
-
-              <Col lg={4} md={6}>
-                <SolutionCard variants={cardVariants}>
-                  <SolutionIcon>
-                    <FaWind />
-                  </SolutionIcon>
-                  <h3>Industrial Power Tools</h3>
-                  <p>Industrial Power Tools are tools used in manufacturing, construction, assembly, and maintenance industries for high-performance tasks like drilling, grinding, cutting, fastening, etc. They are typically designed for heavy-duty, long-duration usage, often powered by pneumatic (air) or electric sources.</p>
                 </SolutionCard>
               </Col>
 
@@ -710,14 +700,14 @@ const Home = () => {
               >
                 <div className="bg-white p-4 rounded shadow-sm" style={{minHeight: '200px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                   <img
-                    src={itwLogo}
-                    alt="ITW Automotive"
+                    src={daimlerLogo}
+                    alt="DAIMLER"
                     className="img-fluid"
                     style={{maxHeight: '120px', maxWidth: '250px', objectFit: 'contain'}}
                   />
                 </div>
-                <h5 className="mt-3">ITW Automotive</h5>
-                <p className="text-muted">Global leader in engineered components and fasteners</p>
+                <h5 className="mt-3">DAIMLER</h5>
+                <p className="text-muted">Leading Commercial Vehicle manufacture</p>
               </motion.div>
             </Col>
             <Col lg={4} md={6}>
@@ -740,24 +730,24 @@ const Home = () => {
                 <p className="text-muted">Leading OEM manufacturer in India</p>
               </motion.div>
             </Col>
-             <Col lg={4} md={6}>
+            <Col lg={4} md={6}>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-center"
               >
                 <div className="bg-white p-4 rounded shadow-sm" style={{minHeight: '200px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                   <img
-                    src={daimlerLogo}
-                    alt="DAIMLER"
+                    src={itwLogo}
+                    alt="ITW Automotive"
                     className="img-fluid"
                     style={{maxHeight: '120px', maxWidth: '250px', objectFit: 'contain'}}
                   />
                 </div>
-                <h5 className="mt-3">DAIMLER</h5>
-                <p className="text-muted">Leading Commercial Vehicle manufacture</p>
+                <h5 className="mt-3">ITW Automotive</h5>
+                <p className="text-muted">Global leader in engineered components and fasteners</p>
               </motion.div>
             </Col>
           </Row>
